@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><scheme description="" title="workflow" version="2.0">
+	<nodes>
+		<node id="0" name="Start" position="(183.0, 348.0)" project_name="workflow" qualified_name="workflow.OWStart.OWStart" title="Start" version=""/>
+		<node id="1" name="bigstitcherfiji" position="(505.0, 349.0)" project_name="workflow" qualified_name="workflow.OWbigstitcherfiji.OWbigstitcherfiji" title="DeepJ" version=""/>
+		<node id="2" name="Utilities_downloadURL" position="(333.0, 350.0)" project_name="workflow" qualified_name="workflow.OWUtilities_downloadURL.OWUtilities_downloadURL" title="downloadURL" version=""/>
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="trigger" sink_node_id="2" source_channel="Trigger" source_node_id="0"/>
+		<link enabled="true" id="1" sink_channel="trigger" sink_node_id="1" source_channel="directory" source_node_id="2"/>
+	</links>
+	<annotations/>
+	<thumbnail/>
+	<node_properties>
+		<properties format="literal" node_id="0">{'controlAreaVisible': True, 'exportGraphics': False, 'inputConnectionsStore': {}, 'iterate': False, 'iterateSettings': {'iterableAttrs': [], 'nWorkers': 1}, 'nWorkers': 1, 'optionsChecked': {}, 'runMode': 0, 'runTriggers': [], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\xae\x00\x00\x00\xee\x00\x00\x05#\x00\x00\x02\\\x00\x00\x02\xae\x00\x00\x01\x06\x00\x00\x05#\x00\x00\x02Y\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'triggerReady': {}, 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'additional': '', 'addupdatesite': [], 'controlAreaVisible': True, 'exportGraphics': True, 'fijidir': '/data/DeepJ/data/Fiji.app', 'headless': False, 'inputConnectionsStore': {'trigger': [2]}, 'installfiji': '', 'iterate': False, 'iterateSettings': {'iterableAttrs': ['addupdatesite'], 'nWorkers': 1}, 'macrofile': '/data/DeepJ/data/Macro.ijm', 'nWorkers': 1, 'optionsChecked': {'fijidir': True, 'installfiji': False, 'overwrite': False, 'headless': False, 'pluginsdir': False, 'macrofile': True, 'script': False, 'updatefiji': False, 'param': False, 'quitnow': False, 'addupdatesite': False, 'additional': False}, 'overwrite': False, 'param': '', 'pluginsdir': '', 'quitnow': False, 'runMode': 2, 'runTriggers': ['trigger'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02R\x00\x00\x00e\x00\x00\x05&gt;\x00\x00\x02\x8c\x00\x00\x02R\x00\x00\x00}\x00\x00\x05&gt;\x00\x00\x02\x89\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'script': False, 'triggerReady': {'trigger': True}, 'updatefiji': False, 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'URL': ['https://drive.google.com/file/d/1gy8aNHd2HYnUGCZ8UIqSPv8vuPsmXiQD/view?usp=sharing'], 'concatenateFile': '', 'controlAreaVisible': True, 'decompress': True, 'directory': '/data/DeepJ/data', 'exportGraphics': False, 'inputConnectionsStore': {'trigger': [1]}, 'iterate': False, 'iterateSettings': {'iterableAttrs': ['URL'], 'nWorkers': 1}, 'nWorkers': 1, 'optionsChecked': {'decompress': False, 'concatenateFile': False}, 'runMode': 2, 'runTriggers': ['trigger'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02\x89\x00\x00\x00\x96\x00\x00\x05u\x00\x00\x02&quot;\x00\x00\x02\x89\x00\x00\x00\xae\x00\x00\x05u\x00\x00\x02\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0', 'triggerReady': {'trigger': True}, 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
+	</node_properties>
+</scheme>
